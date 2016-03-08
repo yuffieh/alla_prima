@@ -1,0 +1,45 @@
+html ,body{
+	font-family: 'Montserrat', sans-serif; 
+	background-color:#434343;
+	color:white;
+}
+
+input{
+	border-radius: 6px;
+	border:1px solid lightgray;
+    font: 18px "Helvetica Neue", helvetica, sans-serif;
+    padding: 8px 10px;
+    margin-right: 8px;
+    color: #444;
+    background-color:white;
+}
+
+
+.btn{
+	color:white;
+	background-color: #d84040;
+	border:none;
+}
+
+.btn:hover{
+	background-color: #ec4545;
+}
+
+.center{
+	display:table;
+	margin-left:25%;
+	margin-top:10%;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  
+.center{
+	display:table;
+	margin: 0 auto;
+}
+
+
+}

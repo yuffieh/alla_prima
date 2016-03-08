@@ -1,0 +1,42 @@
+extends template
+
+block content
+	br
+	.container-fluid(style="margin-top:50px;")
+		.row
+			.col-md-7
+				h3(style="margin:0;") image name
+				.center
+					img(src="/images/spider.jpg").mainimg
+				br 
+				p hello this is a description of the image
+				hr
+			.col-md-4
+				img(style="height:40px; width:40px;" src="http://i1.wp.com/japanlover.me/goodies/kawaii/02-icons/nomnom-01.png").userimg  
+				|   by user
+				h2(style="margin:0;") creative process
+				br 
+				<iframe  width="400px" height="300px" src="https://www.youtube.com/embed/vfUYGB__n-I" frameborder="0" allowfullscreen></iframe>
+				br 
+				h2(style="margin:0;") Inpsired
+				br 
+				.collab
+					img(src="images/col-1.jpg").collabimg
+					| 
+					img(src="images/col-2.jpg").collabimg
+					| 
+					img(src="images/col-3.jpg").collabimg
+				br
+			.col-md-6.comments
+				form(method="post")
+					label(for="comment") Comment:
+					input(type="text", name="comment", value=comment)
+					input(type="submit", value="Save").btn.btn-sm
+					br
+					p
+					- for comment in comments
+						img(src="http://i1.wp.com/japanlover.me/goodies/kawaii/02-icons/nomnom-01.png").userimg 
+						p(style="margin-left:70px; margin-top:-50px;") User said:
+						br
+						p(style="margin-left:70px; margin-top:-10px;color:gray;")= comment.title
+						hr
