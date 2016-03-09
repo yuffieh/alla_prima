@@ -36,4 +36,4 @@ userSchema.methods.validPassword = function(password){
 mongoose.model('comments', Comment);
 module.exports.User = mongoose.model('User', userSchema);
 
-mongoose.connect('mongodb://localhost/node-comment');
+mongoose.connect('mongodb://localhost/final_database');

@@ -3,6 +3,7 @@ var db = require('./database');
 
 
 var express = require('express');
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -19,6 +20,8 @@ var users = require('./routes/users');
 var form = require('./routes/form');
 var login = require('./routes/login');
 var dashboard = require('./routes/dashboard');
+var upload = require('./routes/upload');
+var gallery = require('./routes/gallery');
 
 
 var app = express();
@@ -38,13 +41,18 @@ app.use(bodyParser.urlencoded({
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', routes);
 app.use('/signup', users);
 app.use('/form', form);
 app.use('/login', login);
 app.use('/dashboard', dashboard);
+app.use('/profile', upload);
+app.use('/gallery', gallery);
+
 
 
 // catch 404 and forward to error handler

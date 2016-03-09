@@ -5,14 +5,42 @@ block content
 	.container-fluid
 		.row
 			.col-md-12.main
-				h1 Don't be Afraid Create!
-				hr
-				p
-				a(href="/signup").btn.btn-lg SIGN UP
-				p
-				a(href="/gallery").btn.btn-lg GET INSPIRED
-				p
-				a(href="/login") Already a user?
+				nav.navbar.navbar-default
+					.container-fluid
+						.navbar-header
+							button(type="button" data-toggle="collapse" data-target="#navi" aria-expanded="false").navbar-toggle.collapsed
+								span.sr-only Toggle navigation
+								span.icon-bar.top-bar
+								span.icon-bar.middle-bar
+								span.icon-bar.bottom-bar
+							a(href="/").navbar-brand Alla Prima
+						.collapse.navbar-collapse#navi
+							ul.nav.navbar-nav
+								li
+									a(href="/gallery") GALLERY
+								li
+									a(href="#") TRENDS
+								li
+									a(href="#") TUTORIALS
+	
+							ul.nav.navbar-nav.navbar-right
+								li
+									a(href="#") FAQ
+								li
+									a(href="/login") Login
+							form(role="search").navbar-form.navbar-right
+								.form-group
+									input(type="text" placeholder="Search").form-control
+								button(type="submit").btn.btn-default Submit
+				.center
+					h1 Don't be Afraid Create!
+					hr
+					p
+					a(href="/signup").btn.btn-lg SIGN UP
+					p
+					a(href="/gallery").btn.btn-lg GET INSPIRED
+					p
+					a(href="/login") Already a user?
 			.col-md-12
 				h1.title WHAT ARE WE ABOUT?
 				hr.what
@@ -22,27 +50,39 @@ block content
 				p
 				h1 TO INSPIRE
 				br
-				p Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				p Alla Prima is an itallian term meaning "first time". Commenly a term used for Oil paiting which gave us Inspiration to create our community. 
+				| Here we need you to help grow our community to help those who need some inspiration! Look through other user's work to help get out of your art block or
+				| you can upload your own artwork and help others become inspired from your work! Everyone is an artist they just need a little push.
 
 				
-			.col-md-4.pitchbox
+			.col-md-4.pitchbox#pitchbox
 				p 
 				img(src="./icons/book.svg")
 				p
 				h1 TO LEARN
 				br
-				p Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				p Artist of all levels belong here at Alla Prima. In a big world we find so much art it gets intimidating to continue your own.
+				| Here every artist puts up their process on how they create. You'll soon find common practices and also unique ones, with all the exposure
+				| you yourself will learn all for free! With this you can also track your methods and see how your technique has changed. Everyone here is a Student and a Teacher! 
 			.col-md-4.pitchbox
 				p 
 				img(src="./icons/users.svg")
 				p
 				h1 TO COLLABERATE
 				br
-				p Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				p Great Art comes from other Art. Here is a community who is glad to share their art! 
+				|When we get inspired from another piece of artwork it makes others feel great when you share, all you have to do is click on the inspired part of the image and add your own. With this you will see how others re-do your art or even finishing pieces you didn't want to or couldn't think of!
 			.col-md-12.how
 	footer
 		h3 Join to help inspire and be inspired!
-		p contact something@something.com
+		p Link with us!
+		.social
+			img(src="./icons/twitter.svg").sicon
+			img(src="./icons/facebook-square.svg").sicon
+			img(src="./icons/googleplus-square.svg").sicon
+			img(src="./icons/instagram.svg").sicon
+			img(src="./icons/youtube.svg").sicon
+			img(src="./icons/mail.svg").sicon
 		
 		
 			

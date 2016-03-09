@@ -7,16 +7,29 @@ html ,body{
 	background-color:#04a818;
 }
 
+#pitchbox{
+	  -webkit-transition: 300ms;
+  transition: 300ms;
+  -moz-transition:300ms; /*FireFox*/
+  -o-transition: 300ms; /* Opera */
+}
 .dashimg {
 	width:20vw;
 	height:15vh;
 }
-
+.sicon{
+	height:50px;
+	margin:1em;
+	margin-top:-.5em;
+}
 .main {
 	background-image:url(http://localhost:3000/images/hand.png);
 	background-size:cover;
 	height:100vh;
 	width:100%;
+}
+
+.center{
 	color:white;
 	padding:12em;
 	text-align: center;
@@ -24,7 +37,7 @@ html ,body{
 	margin-top:-20px;
 }
 
-.main h1{
+.center h1{
 	color:white;
 	font-size:5em;
 }
@@ -108,5 +121,155 @@ a:focus {
 }
 
 
+.navbar-default {
+  background-color: transparent; /*Change with transparent*/
+  border-color: transparent;/*Change with transparent*/
+  z-index: 3;
+  	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #a27171;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #825454;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: transparent;/*Change with transparent*/
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #8b5959;
+  background-color: rgba(255, 255, 255, 0.58);
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: transparent;/*Change with transparent*/
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #8f5d5d;
+  background-color: rgba(255, 255, 255, 0.58);
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #936868;
+  background-color: rgba(255, 255, 255, 0.58);
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent; /*Change with transparent*/
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #a27474;
+}
+ 
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+    -webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    -webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #a97575;
+    background-color: rgba(255, 255, 255, 0.58);
+    -webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+  }
+  
+  .navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}  
 
+.center{
+	color:white;
+	margin-top:10%;
+	padding:5em;
+	text-align: center;
+	margin-bottom:3em;
+}
+
+.center h1{
+		font-size:2em;
+}
+
+.sicon{
+	margin:.5em;
+}
+  
+}
+
+footer{
+	text-align: center;
+}
+
+footer p{
+	margin-top:-20px;
+}
 

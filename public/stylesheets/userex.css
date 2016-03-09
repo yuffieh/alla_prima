@@ -7,6 +7,11 @@ html ,body{
 	border: 5px solid white;
 	box-shadow: 2px 5px 5px #888888;
 }
+
+.uploadform{
+	margin-top: 100px;
+}
+
 .center{
 	width:50vw;
 	height:auto;
@@ -17,10 +22,49 @@ html ,body{
 	width:30%;
 }
 
+.signup{
+	width:100%;
+	height: auto;
+	color: black;
+	margin-top:90px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.signup .btn {
+	margin-top:.5em;
+	margin-right:2em;
+	margin-left:2em;
+	margin-bottom:-10px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #a83939;
+    border-color: #a83939;
+}
+.btn-info {
+    color: #fff;
+    background-color: #606473;
+    border-color: #606473;
+}
+
 .collab{
 	text-align: center;
 }
+.userbg{
+	background-color: #3d3d3d;
+	height:50px;
+	text-align: center;
+	color:white;
 
+}
+.userinfo{
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 20em;
+}
 .col-md-7 p{
 	margin-top:20px;
 	text-align: center;
@@ -33,6 +77,15 @@ html ,body{
 	border: 1px solid lightgray;
 	border-radius: 200px;
 	text-align: right;
+
+}
+.profileimg{
+	border-radius:200px;
+	border:2px solid lightgray;
+	height:100px;
+	width:100px;
+	position:absolute;
+	background-color: white;
 }
 
 .comments{
@@ -114,7 +167,10 @@ span.text-content span {
   vertical-align: middle;
 }
 
-
+.userlink .another{
+	margin-left:20px;
+	
+}
 
 span.text-content {
   background: rgba(0, 0, 0, 0.4);
@@ -175,6 +231,148 @@ ul.img-list li:hover span.text-content {
 	-moz-transition: 300ms;
 	-o-transition: 300ms;
 	transition:300ms;
+}
+
+
+.tagunsign{
+	padding:.5em;
+	color: lightgray;
+	margin-top:-40px;
+	position:fixed;
+	width:100vw;
+	background-color:white;
+	z-index: 2;
+	padding-top: 5px;
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	text-align: center;
+}
+
+.tagunsign a{
+	color:lightgray;
+	margin-left: 1em;;
+}
+
+.tagunsign a:visited{
+	color: lightgray;
+	text-decoration: none;
+}
+
+.tagunsign a:hover{
+	color: #973637;
+	font-weight:900;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	transition:300ms;
+}
+
+.littleinfo{
+	float:left; 
+	margin-left:30px;
+	margin-top:-5px;
+}
+
+.userlink{
+	float:right; 
+	margin-left:1em; 
+	margin-top:-10px;
+}
+
+
+@media (max-width: 767px) {
+	.signup .btn {
+	margin-top:2em;
+	margin-right:2em;
+	margin-left:2em;
+	margin-bottom:-10px;
+}
+
+  .navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}  
+
+.collab{
+	text-align: center;
+}
+
+}
+
+@media (max-width: 600px) {
+	
+	.userbg{
+	background-color: #3d3d3d;
+	height:30px;
+	text-align: center;
+	color:white;
+
+}
+.userinfo{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 4.5em;
+	margin-top:-10px;
+}
+.profileimg{
+	border-radius:200px;
+	border:2px solid lightgray;
+	height:80px;
+	width:80px;
+	margin-top:15px;
+	margin-left:-40px;
+	position:absolute;
+	background-color: white;
+}
+
+.littleinfo{
+	float:left; 
+	font-size:10px;
+	margin-left:0px;
+	margin-top:-12px;
+	color:white;
+
+}
+
+.userlink{
+	margin-top:70px;
+	position:absolute;
+	
+}
+
+.userlink .another{
+	margin-left:200px;
+	
+}
+	
 }
 
 

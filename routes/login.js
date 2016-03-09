@@ -13,13 +13,15 @@ router.get('/', function(req, res) {
   });
   
 
+/*
 router.post('/', passport.authenticate('local', { failureRedirect: '/login'}),
 	function(req,res){
 		res.redirect('/dashboard');
 	}
 );
+*/
 
-/*
+
 router.post('/', function(req, res, next){
 console.log("something else here")
 	passport.authenticate('local', function(err, user, info){
@@ -34,12 +36,12 @@ console.log("something else here")
 		}
 		req.logIn(user, function(err){
 			if(err){ return next(err);}
-			return res.redirect('/users/' + user.username)
+			return res.redirect('/dashboard')
 		});
 		
 		})(req, res, next)
 });
-*/
+
 
 
 

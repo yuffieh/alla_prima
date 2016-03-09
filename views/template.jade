@@ -15,44 +15,7 @@ html
 
 
 	body
-			nav.navbar.navbar-default.navbar-fixed-top
-				.container-fluid
-					.navbar-header
-						button(type="button" data-toggle="collapse" data-target="#navi" aria-expanded="false").navbar-toggle.collapsed
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a(href="/").navbar-brand Brand
-					.collapse.navbar-collapse#navi
-						ul.nav.navbar-nav
-							li.active
-								a(href="#") GALLERY
-							li
-								a(href="#") TRENDS
-							li
-								a(href="#") TUTORIALS
 
-						ul.nav.navbar-nav.navbar-right
-							li
-								a(href="#") FAQ
-							li
-								img(src="http://i1.wp.com/japanlover.me/goodies/kawaii/02-icons/nomnom-01.png").userimg
-							li.dropdown
-								a(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") User
-									span.caret
-								ul.dropdown-menu
-									li
-										a(href="#") Upload
-									li
-										a(href="#") Edit Profile
-						form(role="search").navbar-form.navbar-right
-							.form-group
-								input(type="text" placeholder="Search").form-control
-							button(type="submit").btn.btn-default Submit
-									
-						
-				
 		block content 
 	
 	script(src="javascripts/masonry.pkgd.min.js")

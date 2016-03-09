@@ -1,0 +1,42 @@
+extends template
+
+block content 
+	nav.navbar.navbar-default.navbar-fixed-top
+		.container-fluid
+			.navbar-header
+				button(type="button" data-toggle="collapse" data-target="#navi" aria-expanded="false").navbar-toggle.collapsed
+					span.sr-only Toggle navigation
+					span.icon-bar.top-bar
+					span.icon-bar.middle-bar
+					span.icon-bar.bottom-bar
+				a(href="/").navbar-brand Alla Prima
+			.collapse.navbar-collapse#navi
+				ul.nav.navbar-nav
+					li
+						a(href="/gallery") GALLERY
+					li
+						a(href="#") TRENDS
+					li
+						a(href="#") TUTORIALS
+
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href="#") FAQ
+					li
+						img(src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-cute-cactus.png").userimg
+					li.dropdown
+						a(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") User
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="profile/upload") Upload
+							li
+								a(href="#") Edit Profile
+				form(role="search").navbar-form.navbar-right
+					.form-group
+						input(type="text" placeholder="Search").form-control
+					button(type="submit").btn.btn-default Submit
+	.uploadform
+		form(action="/profile/upload" method="post" enctype="multipart/form-data")
+			input(type="file" name="profile")
+			input(type="submit" value="submit").btn.btn-sm.btn-info

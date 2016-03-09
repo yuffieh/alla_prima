@@ -1,0 +1,102 @@
+extends template
+
+block content
+	nav.navbar.navbar-default.navbar-fixed-top
+		.container-fluid
+			.navbar-header
+				button(type="button" data-toggle="collapse" data-target="#navi" aria-expanded="false").navbar-toggle.collapsed
+					span.sr-only Toggle navigation
+					span.icon-bar.top-bar
+					span.icon-bar.middle-bar
+					span.icon-bar.bottom-bar
+				a(href="/").navbar-brand Alla Prima
+			.collapse.navbar-collapse#navi
+				ul.nav.navbar-nav
+					li
+						a(href="/gallery") GALLERY
+					li
+						a(href="#") TRENDS
+					li
+						a(href="#") TUTORIALS
+
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href="#") FAQ
+					li
+						img(src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-cute-cactus.png").userimg
+					li.dropdown
+						a(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") User
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href="profile/upload") Upload
+							li
+								a(href="#") Edit Profile
+				form(role="search").navbar-form.navbar-right
+					.form-group
+						input(type="text" placeholder="Search").form-control
+					button(type="submit").btn.btn-default Submit
+					
+	.container-fluid(style="margin-top:60px;")
+		.row
+			.col-md-12.userbg
+				br
+				.userlink
+					a(href="#").btn.btn-info Follow
+					a(href="#").btn.btn-warning.another Store
+				img(src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-cute-cactus.png").profileimg
+				p.littleinfo <b>30 Followers</b> | <b>43 Inspirations</b> | <b>50 Post</b>
+			.col-md-12.userinfo
+				h1 Sarah Huynh
+	.testing
+		ul.grid.effect-5#grid.img-list
+			li
+				a(href="#")
+					img(src="copic/12.jpg")
+					span.text-content Two of a Kind 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+			li
+				a(href="#")
+					img(src="copic/2.png")
+					span.text-content Just wing it 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+						
+			li
+				a(href="#")
+					img(src="copic/1.png")
+					span.text-content Color Map 	
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+			li
+				a(href="#")
+					img(src="copic/5.jpg")
+					span.text-content Just wing it 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right		
+			li
+				a(href="#")
+					img(src="copic/3.jpg")
+					span.text-content Two of a Kind 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+			li
+				a(href="#")
+					img(src="copic/4.png")
+					span.text-content Just wing it 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+						
+			li
+				a(href="#")
+					img(src="copic/5.png")
+					span.text-content Color Map 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
+			li
+				a(href="#")
+					img(src="copic/10.jpg")
+					span.text-content Just wing it 
+						img(src="/icons/add.gif").right
+						img(src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png").right
