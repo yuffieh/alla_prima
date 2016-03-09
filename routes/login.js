@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
+var Current = mongoose.model('usernam');
 var passport = require('passport');
 var crypto = require('crypto');
 
@@ -13,19 +14,11 @@ router.get('/', function(req, res) {
   });
   
 
-/*
-router.post('/', passport.authenticate('local', { failureRedirect: '/login'}),
-	function(req,res){
-		res.redirect('/dashboard');
-	}
-);
-*/
 
 
 router.post('/', function(req, res, next){
 console.log("something else here")
 	passport.authenticate('local', function(err, user, info){
-		console.log("something", user)
 		if(err){
 			console.log(err);
 			return;
@@ -34,8 +27,14 @@ console.log("something else here")
 			res.redirect('/login');
 			return;
 		}
+		
 		req.logIn(user, function(err){
 			if(err){ return next(err);}
+			Current.find( console.log(Current))
+			  Current.update({userName : req.body.username})
+			  console.log(user)
+			  console.log("above is the current user")
+
 			return res.redirect('/dashboard')
 		});
 		

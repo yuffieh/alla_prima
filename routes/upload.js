@@ -2,6 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var router = express.Router();
 var mongoose = require('mongoose');
+var userImg = mongoose.model('img');
 var multer = require('multer');
 var maxSize = 32 * 1000 * 1000;
 
@@ -16,7 +17,7 @@ router.get('/upload', function(req, res, next) {
 
 
 router.post('/upload', multer({
-    dest: './uploads',
+    dest: './public/userimgs',
     onFileUploadStart: function(file, req, res){
         if(req.file.length > maxSize){
             return false
@@ -28,15 +29,21 @@ router.post('/upload', multer({
         ending = ".jpg";
     } else if (req.file.mimetype == "image/png") {
         ending = ".png";
-    } else {
+    } else if(req.file.mimetype == "image/gif"){
+	    ending = ".gif"; 
+    }else {
         res.redirect('/profile/uploads/');
         fs.unlink(req.file.path);
         return;
     }
 
-    var userpath  = "./userimgs/" + req.file.filename + ending;
+    var userpath  = "./public/userimgs/" + req.file.filename + ending;
     fs.rename (req.file.path, userpath);
-//also write userpath into database so you can recall it later
+  new userImg({filename : userpath})
+  .save(function(err, filename) {
+    console.log(filename)
+  });
+
     res.redirect('/profile/upload');
 });
 

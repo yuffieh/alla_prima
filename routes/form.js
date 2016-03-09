@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
+var userImg = mongoose.model('img');
 var Comment = mongoose.model('comments');
 
 
@@ -9,11 +10,11 @@ var Comment = mongoose.model('comments');
 router.get('/', function(req, res) {
   Comment.find(function(err, comments){
     console.log(comments);
-    res.render(
-      'form',
-      {title : 'viewimagepage', comments : comments}
-    );
+    userImg.find(function(err, imgData){
+    res.render('form',{title : 'viewimagepage', comments : comments, imgSrc : imgData[0].filename });
+  })
   });
+  
 });
 
 /* POST form. */

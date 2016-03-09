@@ -10,21 +10,25 @@ html
 		link(rel='stylesheet', href='/stylesheets/login.css') 
 		script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
 		link( href='//fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css' )
+		link( href='//fonts.googleapis.com/css?family=Rouge+Script', rel='stylesheet', type='text/css' )
 
 
 	body
 		.container-fluid
 			.row
+				h1 
+					a(href="/").title Alla Prima
+					
+				h1.formhead Sign Up!
 			.backlayout
-				h2.form-login-heading Sign Up!
-				.center
-					form.form-signup(method="post")
-						input(type="text", name="fnam", placeholder="First Name", require)
-						p 
-						input(type="text", name="lnam", placeholder="Last Name", required)
-						p 
-						input(type="text", name="username", placeholder="Username", required)
-						p 
-						input(type="password", name="password", placeholder="Password", required)
-						p 
-						input.btn(type="submit", value="Save")
+				form.form-signup(method="post")
+					input(type="text", name="fnam", placeholder="First Name", require)
+					p 
+					input(type="text", name="lnam", placeholder="Last Name", required)
+					p 
+					input(type="text", name="username", placeholder="Username", required)
+					p 
+					input(type="password", name="password", placeholder="Password", required)
+					p 
+					input.btn(type="submit", value="Sign up")
+	

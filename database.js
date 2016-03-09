@@ -6,6 +6,14 @@ var Comment = new Schema({
     title : String
 });
 
+var Current = new Schema({
+    userName : String
+});
+
+var userImg = new Schema({
+    filename : String
+});
+
 var userSchema = new Schema({
     fname : String,
     lname: String,
@@ -34,6 +42,8 @@ userSchema.methods.validPassword = function(password){
 
 
 mongoose.model('comments', Comment);
+mongoose.model('usernam', Current);
+mongoose.model('img', userImg);
 module.exports.User = mongoose.model('User', userSchema);
 
 mongoose.connect('mongodb://localhost/final_database');
