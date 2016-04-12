@@ -185,6 +185,8 @@ a:focus {
   color: #a27474;
 }
  
+ 
+ 
 @media (max-width: 900px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;

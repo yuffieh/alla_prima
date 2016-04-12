@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
 	console.log(userdata, "this is our current user");
     res.render(
       'dashboard',
-      {title : 'Dashboard', imgSrc : imgData[0].filename, user : userdata }
+      {title : 'Dashboard', userSrc : imgData[0].filename, user : userdata, imgSrc: imgData  }
     );
      })
     

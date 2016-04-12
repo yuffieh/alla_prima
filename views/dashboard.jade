@@ -9,7 +9,7 @@ block content
 					span.icon-bar.top-bar
 					span.icon-bar.middle-bar
 					span.icon-bar.bottom-bar
-				a(href="/").navbar-brand Alla Prima
+				a(href="/dashboard").navbar-brand Alla Prima
 			.collapse.navbar-collapse#navi
 				ul.nav.navbar-nav
 					li
@@ -23,7 +23,7 @@ block content
 					li
 						a(href="#") FAQ
 					li
-						img(src=imgSrc).userimg
+						img(src=userSrc).userimg
 					li.dropdown
 						a(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") User
 							span.caret
@@ -31,7 +31,7 @@ block content
 							li
 								a(href="profile/upload") Upload
 							li
-								a(href="#") Edit Profile
+								a(href="/profile") Edit Profile
 				form(role="search").navbar-form.navbar-right
 					.form-group
 						input(type="text" placeholder="Search").form-control
@@ -45,7 +45,7 @@ block content
 		ul.grid.effect-6#grid.img-list
 			li
 				a(href="/form")
-					img(src="copic/12.jpg")
+					img(src="./copic/12.jpg")
 					span.text-content Two of a Kind 
 						br 
 						| by: xPine
